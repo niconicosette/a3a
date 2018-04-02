@@ -1,0 +1,50 @@
+------ TO DO -------
+
+- main story feature
+
+------ NOTES -------
+
+(mp3s saved at 64)
+(tinypng for compression)
+(left out sounds: sakoda bday, matsukawa bday, anniversary event sounds)
+
+soundfileguide:
+31 = newyear
+32 = valentine
+33 = whiteday
+34 = aprilfool
+35 = childrenday
+36 = tanbata
+37 = endofsummer
+38 = halloween
+39 = christmas
+rest are bdays & anniversary
+
+when new charas come:
+- correct the filenames in their sound arrays, and the messages in them
+- var guytime = ["...", "...", "...", "..."]; etc
+
+- do their slide out profiles (in dom)
+- <div class="profilecardcontainer" id="guyprofile"> etc
+
+- sort their images and add them to both rarity sort and chara sort (add (2) to title and act="2" and page ="theirname")
+- <img class="thumb" src="img/tsumugi/r-angel2.png" cardname="天使を憐れむ歌。(1)" page="tsumugi" act="1">
+
+- add their event sounds to dom sound spans
+- <span class="nosho" id="omisakuyabday2" sound="sound/zsakuyabday2/omi.mp3" msg="..."></span> etc
+
+- fix their birthday dates in ifevent function
+     else if ( xday == 92 &&  xmonth == 92 ) {
+        eventsound("guybday");
+      } etc...
+
+
+------ WHEN A3 GOES OFFLINE ------
+ 
+- event and backstage stories
+- blog entry feature
+- card quote feature
+- outside work convos browser
+- flip through chibi feature
+- add button to profile card to play extra voices
+- make textbubble, iprofile, sortbutton, navbar size relative
