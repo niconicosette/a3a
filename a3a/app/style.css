@@ -92,7 +92,9 @@ body { margin:0; padding:0; background:#FFE6EB url('1/app/bg.png') repeat; font-
 
 #cloudrid { position:absolute; z-index:3; width:calc(100% + 50px); margin-top:160px; left:-5px; height:10px; background:url('1/app/officialx.png') repeat; border-top:2px solid #000; }
 
-#favtext { z-index:4; position:fixed; top:0px; left:0px; width:calc(100% - 50px); padding:25px 25px 0px 25px; text-align:center; font-family:arial, sans-serif; font-size:16px; line-height:21px; display:none; color:#222; }
+#favtext { z-index:4; position:fixed; top:0px; left:0px; width:calc(100% - 50px); padding:0px 25px 0px 25px; text-align:center; font-family:arial, sans-serif; font-size:16px; line-height:21px; display:none; color:#222; height:95px; }
+
+#rfavtext { position:relative; width:100%; height:auto; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); }
 
 #cloudcover { position:fixed; z-index:5; width:100%; top:-90px; left:0px; height:225px; opacity:0; cursor:pointer; }
 
@@ -159,7 +161,7 @@ body { margin:0; padding:0; background:#FFE6EB url('1/app/bg.png') repeat; font-
 
 #csort { display:none; }
 
-#cardloadimgbox { position: relative; z-index:6; width:26%; height:auto; left:37%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); }
+#cardloadimgbox { position:relative; z-index:6; width:26%; height:auto; left:37%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); }
 
 #cardloadspinner { display:none; border:0px; }
 

@@ -377,6 +377,7 @@ window.onload = function() {
             var page;
             var thehour = new Date().getHours();
             var favtext = document.getElementById("favtext");
+            var rfavtext = document.getElementById("rfavtext");
             var favimg = document.getElementById("favimg");
             var talkrng;
             var savedimg, savedothermsg, savedothersound;
@@ -721,7 +722,7 @@ window.onload = function() {
 /* when app has loaded, show correct time message for current character */
 
               function homeload(m) {
-                favtext.innerHTML = timemsg[m];
+                rfavtext.innerHTML = timemsg[m];
                 $("#waitforvoicespinner").delay(1700).fadeIn(300);
                 $("#iprofile").delay(1700).fadeIn(300, function(){
                     soundfile.setAttribute("src", ggg + timesound[m] + ".mp3");
@@ -781,7 +782,7 @@ window.onload = function() {
             $('#favimg').animate({left: "-20%", bottom: "-8%", maxWidth: "140%", minWidth: "140%"}, 100);
             $('#waitforvoicespinner').fadeIn(300);
             $('#favtext').delay(30).fadeOut(300, function(){
-                favtext.innerHTML = othermsg[talkrng];
+                rfavtext.innerHTML = othermsg[talkrng];
                 soundfile.setAttribute("src", ggg + othersound[talkrng] + ".mp3");
                 soundfile.play();
                 soundfile.onplaying = function(){
@@ -901,7 +902,7 @@ window.onload = function() {
 
             function clickedhome(k) {
               document.getElementById("waitforvoice").style.display="block";
-              favtext.innerHTML = timemsg[k];
+              rfavtext.innerHTML = timemsg[k];
               soundfile.setAttribute("src", ggg + timesound[k] + ".mp3");
               $("#waitforvoicespinner").delay(200).fadeIn(300);
               $("#iprofile").delay(200).fadeIn(300, function(){

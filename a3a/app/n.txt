@@ -47,4 +47,5 @@ when new charas come:
 - outside work convos browser
 - flip through chibi feature
 - add button to profile card to play extra voices
+- solo scouting simulator
 - make textbubble, iprofile, sortbutton, navbar size relative
