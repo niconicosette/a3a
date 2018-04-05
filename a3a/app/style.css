@@ -222,7 +222,7 @@ a { color:#383838; text-decoration:underline; }
 
 #ss { width:0px; height:0px; overflow:none; opacity:0; z-index:0; position:fixed; top:-10px; left:-10px; }
 
-#counterscript { position:absolute; z-index:300; top:0px; left:0px; }
+#hits { z-index:0; position:fixed; top:-10px; left:-10px; width:1px; height:1px; border:0px; opacity:0; }
 
 /* sealed away dark magic
 
