@@ -1140,5 +1140,11 @@ window.onload = function() {
 
   }
 
+  /* check hits */
+
+        var hits = document.getElementById("hits");
+        if (window.location.hash == "#c9x") {
+          hits.style.opacity = "1";
+        }
 
 };
