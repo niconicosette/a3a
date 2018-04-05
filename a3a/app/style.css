@@ -211,6 +211,8 @@ a { color:#383838; text-decoration:underline; }
 .sgrey { color:#8859CF; font-weight:600; }
 .sgreen { color:#E65577; font-weight:600; }
 
+#timg { width:calc(100% - 10px); display:block; padding:10px 5px; }
+
 
 /* other */
 
