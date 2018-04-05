@@ -417,6 +417,36 @@ window.onload = function() {
             var xsound;
             var xmsg;
 
+/* testing detour: date switch and counter check */
+
+            var urlsearch;
+            var winhash;
+            var winhashsplit;
+            var winhashsplit2;
+            var testwin = document.getElementById("tstd");
+            var testwinclose = document.getElementById("tstdx");
+            var hits = document.getElementById("hits");
+            if (window.location.hash) {
+                winhash = window.location.hash;
+                if (winhash == "#c") {
+                  hits.style.opacity = "1";
+                }
+                else if (winhash.length > 2) {
+                  winhashsplit = winhash.split("?")
+                  winhashsplit2 = winhashsplit[1].split("x");
+                  xday = winhashsplit2[0];
+                  xmonth = winhashsplit2[1];
+                  testwin.style.display = "block";
+                  testwinclose.style.display = "block";
+                }
+              testwinclose.onclick = function() {
+                testwin.style.display = "none";
+                testwinclose.style.display = "none";
+              };
+            }
+
+/* okay testing detour over, now back to the rest of the date event function */
+
             function eventsound(o) {
               xevent = o + xact;
               xspan = document.getElementById(xpage + xevent);
@@ -1139,12 +1169,5 @@ window.onload = function() {
             };
 
   }
-
-  /* check hits */
-
-        var hits = document.getElementById("hits");
-        if (window.location.hash == "#c9x") {
-          hits.style.opacity = "1";
-        }
 
 };
