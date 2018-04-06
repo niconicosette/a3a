@@ -423,7 +423,7 @@ window.onload = function() {
             var winhash;
             var winhashsplit;
             var winhashsplit2;
-            var testwin = document.getElementById("tstd");
+            var testwin = document.getElementById("tstf");
             var testwinclose = document.getElementById("tstdx");
             var hits = document.getElementById("hits");
             if (window.location.hash) {
@@ -437,11 +437,9 @@ window.onload = function() {
                   xday = winhashsplit2[0];
                   xmonth = winhashsplit2[1];
                   testwin.style.display = "block";
-                  testwinclose.style.display = "block";
                 }
               testwinclose.onclick = function() {
                 testwin.style.display = "none";
-                testwinclose.style.display = "none";
               };
             }
 
