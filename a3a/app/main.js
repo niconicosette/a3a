@@ -424,6 +424,7 @@ window.onload = function() {
             var winhashsplit;
             var winhashsplit2;
             var testwin = document.getElementById("tstf");
+            var testframe = document.getElementById("tstd");
             var testwinclose = document.getElementById("tstdx");
             var hits = document.getElementById("hits");
             if (window.location.hash) {
@@ -436,6 +437,7 @@ window.onload = function() {
                   winhashsplit2 = winhashsplit[1].split("x");
                   xday = winhashsplit2[0];
                   xmonth = winhashsplit2[1];
+                  testframe.src = "dtst.html";
                   testwin.style.display = "block";
                 }
               testwinclose.onclick = function() {
