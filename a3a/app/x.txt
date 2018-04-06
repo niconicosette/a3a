@@ -49,3 +49,11 @@ when new charas come:
 - add button to profile card to play extra voices
 - solo scouting simulator
 - make textbubble, iprofile, sortbutton, navbar size relative
+
+
+contributors and testers:
+niconicosette
+krsh(remove)
+jun(maybe)
+sof (yuki ssr)
+nana (maybe?)
