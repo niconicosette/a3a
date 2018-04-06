@@ -417,9 +417,8 @@ window.onload = function() {
             var xsound;
             var xmsg;
 
-/* testing detour: date switch and counter check */
+/* testing functions detour */
 
-            var urlsearch;
             var winhash;
             var winhashsplit;
             var winhashsplit2;
@@ -431,6 +430,10 @@ window.onload = function() {
                 winhash = window.location.hash;
                 if (winhash == "#c") {
                   hits.style.opacity = "1";
+                }
+                else if (winhash == "#card") {
+                  testframe.src = "ctst.html";
+                  testwin.style.display = "block";
                 }
                 else if (winhash.length > 3) {
                   winhashsplit = winhash.split("?")
