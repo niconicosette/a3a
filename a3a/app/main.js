@@ -432,7 +432,7 @@ window.onload = function() {
                 if (winhash == "#c") {
                   hits.style.opacity = "1";
                 }
-                else if (winhash.length > 2) {
+                else if (winhash.length > 3) {
                   winhashsplit = winhash.split("?")
                   winhashsplit2 = winhashsplit[1].split("x");
                   xday = winhashsplit2[0];
