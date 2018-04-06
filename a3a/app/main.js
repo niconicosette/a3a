@@ -431,7 +431,7 @@ window.onload = function() {
                 if (winhash == "#c") {
                   hits.style.opacity = "1";
                 }
-                else if (winhash == "#card") {
+                else if (winhash == "#cardxx") {
                   testframe.src = "ctst.html";
                   testwin.style.display = "block";
                 }
