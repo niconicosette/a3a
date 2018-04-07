@@ -356,7 +356,7 @@ window.onload = function() {
             var kumonother = ["☆", "☆", "☆", "☆", "☆", "☆", "☆", "☆", "☆"];
 
             var kumontimesound = ["kumon/morning", "kumon/noon", "kumon/eve", "kumon/night"];
-            var kumonothersound = ["kumon/0", "kumon/1", "kumon/2", "kumon/3", "kumon/0", "kumon/1", "kumon/2", "kumon/3", "kumon/0"];
+            var kumonothersound = ["kumon/banri", "kumon/eto", "kumon/kore", "kumon/kyo", "kumon/n", "kumon/ne", "kumon/oa", "kumon/sigh", "kumon/ta"];
 
 
             /* guy */
@@ -565,7 +565,7 @@ window.onload = function() {
               else if ( xday == 90 &&  xmonth == 90 ) {
                 eventsound("azamibday");
               }
-              else if ( xday == 91 &&  xmonth == 91 ) {
+              else if ( xday == 20 &&  xmonth == 7 ) {
                 eventsound("kumonbday");
               }
               else if ( xday == 92 &&  xmonth == 92 ) {
