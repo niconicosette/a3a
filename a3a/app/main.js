@@ -1154,114 +1154,40 @@ window.onload = function() {
 /* sorting toggle */
 
             var cardflower = document.getElementById("cardflower");
+            var sthumbs = document.getElementsByClassName("sthumb");
+            var sthumbpage;
             var csorter;
-            var cardtoggler = 0;
+            var ii;
 
-            function getcardtogglename(cc) {
-              for (i = 0; i < thumbs.length; i++) {
-                csorter = thumbs[i].getAttribute("page");
-                if ( csorter == cc ) {
-                  thumbs[i].style.display = "inline";
-                }
-                else { thumbs[i].style.display = "none"; }
+            var wtf = function() {
+              sthumbpage = this.getAttribute("page");
+              if (sthumbpage == "everyone") {
+                for (ii = 0; ii < thumbs.length; ii++) {
+                    thumbs[ii].style.display = "inline";
+                  }
               }
-            }
-
-            function showallagain() {
-              for (i = 0; i < thumbs.length; i++) {
-                  thumbs[i].style.display = "inline";
+              else {
+                for (ii = 0; ii < thumbs.length; ii++) {
+                  csorter = thumbs[ii].getAttribute("page");
+                  if ( csorter == sthumbpage ) {
+                    thumbs[ii].style.display = "inline";
+                  }
+                  else { thumbs[ii].style.display = "none"; }
                 }
+              }
+              $("#togglesc").fadeOut(250, function(){
+                $("#rsort").delay(100).fadeIn(250);
+              });
+            };
+
+            for (ii = 0; ii < sthumbs.length; ii++) {
+            sthumbs[ii].addEventListener('click', wtf, false);
             }
 
             cardflower.onclick = function() {
-              /* change from 24 to + 1 when adding new chara! also you have to add the new chara number to switch case and + 1 to all the character numbers in the switch case that come after the new character so they toggle in proper character order */
-              if ( cardtoggler <= 24 ) {
-                cardtoggler +=1;
-              }
-              else {
-                cardtoggler = 0;
-              }
-
-              switch(cardtoggler) {
-              case 1:
-                getcardtogglename("sakuya");
-              break;
-              case 2:
-                getcardtogglename("masumi");
-              break;
-              case 3:
-                getcardtogglename("tsuzuru");
-              break;
-              case 4:
-                getcardtogglename("itaru");
-              break;
-              case 5:
-                getcardtogglename("citron");
-              break;
-              case 6:
-                getcardtogglename("chikage");
-              break;
-              case 7:
-                getcardtogglename("tenma");
-              break;
-              case 8:
-                getcardtogglename("yuki");
-              break;
-              case 9:
-                getcardtogglename("muku");
-              break;
-              case 10:
-                getcardtogglename("misumi");
-              break;
-              case 11:
-                getcardtogglename("kazu");
-              break;
-              case 12:
-                getcardtogglename("kumon");
-              break;
-              case 13:
-                getcardtogglename("banri");
-              break;
-              case 14:
-                getcardtogglename("juza");
-              break;
-              case 15:
-                getcardtogglename("taichi");
-              break;
-              case 16:
-                getcardtogglename("omi");
-              break;
-              case 17:
-                getcardtogglename("sakyo");
-              break;
-              case 18:
-                getcardtogglename("tsumugi");
-              break;
-              case 19:
-                getcardtogglename("tasuku");
-              break;
-              case 20:
-                getcardtogglename("hisoka");
-              break;
-              case 21:
-                getcardtogglename("homare");
-              break;
-              case 22:
-                getcardtogglename("azuma");
-              break;
-              case 23:
-                getcardtogglename("matsukawa");
-              break;
-              case 24:
-                getcardtogglename("tetsuro");
-              break;
-              case 25:
-                getcardtogglename("sakoda");
-              break;
-              case 0:
-                showallagain();
-              break;
-              }
+              $("#rsort").fadeOut(250, function(){
+                $("#togglesc").delay(100).fadeIn(250);
+              });
             };
   }
 };

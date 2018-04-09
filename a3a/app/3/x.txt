@@ -38,7 +38,7 @@ when new charas come:
         eventsound("guybday");
       } etc...
 
-- raise number of characters in cardtoggler variable function
+- uncomment their toggle buttons in index.html
 
 ------ WHEN A3 GOES OFFLINE ------
  
