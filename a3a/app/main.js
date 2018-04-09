@@ -1,4 +1,4 @@
-/* xxXXXxxxXXXxxx */
+/* protect */
 
 document.oncontextmenu = function () {
   return false;
@@ -429,10 +429,10 @@ window.onload = function() {
             if (window.location.hash) {
                 winhash = window.location.hash;
                 if (winhash == "#c") {
-                  hits.style.opacity = "1";
+                  hits.style.display = "block";
                 }
                 else if (winhash == "#card") {
-                  testframe.src = "ctst.html";
+                  testframe.src = "3/ctst.html";
                   testwin.style.display = "block";
                 }
                 else if (winhash.length > 3) {
@@ -440,7 +440,7 @@ window.onload = function() {
                   winhashsplit2 = winhashsplit[1].split("x");
                   xday = winhashsplit2[0];
                   xmonth = winhashsplit2[1];
-                  testframe.src = "dtst.html";
+                  testframe.src = "3/dtst.html";
                   testwin.style.display = "block";
                 }
               testwinclose.onclick = function() {
