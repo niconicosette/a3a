@@ -1153,24 +1153,115 @@ window.onload = function() {
 
 /* sorting toggle */
 
-            var toggle = 1;
             var cardflower = document.getElementById("cardflower");
+            var csorter;
+            var cardtoggler = 0;
+
+            function getcardtogglename(cc) {
+              for (i = 0; i < thumbs.length; i++) {
+                csorter = thumbs[i].getAttribute("page");
+                if ( csorter == cc ) {
+                  thumbs[i].style.display = "inline";
+                }
+                else { thumbs[i].style.display = "none"; }
+              }
+            }
+
+            function showallagain() {
+              for (i = 0; i < thumbs.length; i++) {
+                  thumbs[i].style.display = "inline";
+                }
+            }
+
             cardflower.onclick = function() {
-              if (toggle == 1) {
-                cardflower.setAttribute("src", "1/app/cardflower2.svg");
-                document.getElementById("rsort").style.display = "none";
-                document.getElementById("csort").style.display = "block";
-                toggle = 2;
+              /* change from 24 to + 1 when adding new chara! also you have to add the new chara number to switch case and + 1 to all the character numbers in the switch case that come after the new character so they toggle in proper character order */
+              if ( cardtoggler <= 24 ) {
+                cardtoggler +=1;
               }
               else {
-                cardflower.setAttribute("src", "1/app/cardflower.svg");
-                document.getElementById("rsort").style.display = "block";
-                document.getElementById("csort").style.display = "none";
-                toggle = 1;
+                cardtoggler = 0;
               }
 
+              switch(cardtoggler) {
+              case 1:
+                getcardtogglename("sakuya");
+              break;
+              case 2:
+                getcardtogglename("masumi");
+              break;
+              case 3:
+                getcardtogglename("tsuzuru");
+              break;
+              case 4:
+                getcardtogglename("itaru");
+              break;
+              case 5:
+                getcardtogglename("citron");
+              break;
+              case 6:
+                getcardtogglename("chikage");
+              break;
+              case 7:
+                getcardtogglename("tenma");
+              break;
+              case 8:
+                getcardtogglename("yuki");
+              break;
+              case 9:
+                getcardtogglename("muku");
+              break;
+              case 10:
+                getcardtogglename("misumi");
+              break;
+              case 11:
+                getcardtogglename("kazu");
+              break;
+              case 12:
+                getcardtogglename("kumon");
+              break;
+              case 13:
+                getcardtogglename("banri");
+              break;
+              case 14:
+                getcardtogglename("juza");
+              break;
+              case 15:
+                getcardtogglename("taichi");
+              break;
+              case 16:
+                getcardtogglename("omi");
+              break;
+              case 17:
+                getcardtogglename("sakyo");
+              break;
+              case 18:
+                getcardtogglename("tsumugi");
+              break;
+              case 19:
+                getcardtogglename("tasuku");
+              break;
+              case 20:
+                getcardtogglename("hisoka");
+              break;
+              case 21:
+                getcardtogglename("homare");
+              break;
+              case 22:
+                getcardtogglename("azuma");
+              break;
+              case 23:
+                getcardtogglename("matsukawa");
+              break;
+              case 24:
+                getcardtogglename("tetsuro");
+              break;
+              case 25:
+                getcardtogglename("sakoda");
+              break;
+              case 0:
+                showallagain();
+              break;
+              }
             };
-
   }
-
 };

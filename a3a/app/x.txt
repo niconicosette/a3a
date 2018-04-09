@@ -38,6 +38,7 @@ when new charas come:
         eventsound("guybday");
       } etc...
 
+- raise number of characters in cardtoggler variable function
 
 ------ WHEN A3 GOES OFFLINE ------
  
