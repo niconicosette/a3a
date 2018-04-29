@@ -1,8 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>　</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="app/1/app/fav.png" />
+<title>A3!A</title>
+<style>
+body { margin:0; padding:0; font-family:arial; font-size:16px; letter-spacing:1px; color:#FFABC0; line-height:17px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background:#000000; }
+#needjs { z-index:200; position:fixed; width:100%; height:100%; text-align:center; font-weight:600; background:#000000; }
+#needtext { position:absolute; width:100%; height:50px; top:calc(50% - 50px); }
+#loading { z-index:100; position:fixed; width:100%; height:100%; text-align:center; cursor:default; background:#000000;}
+#loadtext { position:absolute; z-index:102; width:100%; height:150px; top:calc(50% - 70px); line-height:32px; font-weight:600; }
+#loadface { width:70px; }
+#loadframe { width:5px; height:5px; top:0px; left:0px; position:absolute; z-index:0; }
+</style>
 </head>
 <body>
+<noscript>
+<div id="needjs">
+<div id="needtext">JavaScriptを有効にしてください</div>
+</div>
+</noscript>
+<div id="loading">
+<div id="loadtext">
+<img id="loadface" src="app/1/app/load.svg"><br>
+<span id="loadeng">ロード中<br></span>
+<span id="numb"></span>
+</div>
+</div>
+<iframe id="loadframe" src=""></iframe>
 </body>
+<script>
+var iframe = document.getElementById("loadframe");
+iframe.onload = function() { location = "app/"; };
+iframe.src = "app/index.html";
+</script>
 </html>
