@@ -342,12 +342,12 @@ window.onload = function() {
 
             /* azami */
 
-            var azamitime = ["☆", "☆", "☆", "☆"];
+            var azamitime = ["テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし"];
 
-            var azamiother = ["☆", "☆", "☆", "☆", "☆", "☆", "☆", "☆", "☆"];
+            var azamiother = ["テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし"];
 
             var azamitimesound = ["azami/morning", "azami/noon", "azami/eve", "azami/night"];
-            var azamiothersound = ["azami/0", "azami/1", "azami/2", "azami/3", "azami/0", "azami/1", "azami/2", "azami/3", "azami/0"];
+            var azamiothersound = ["azami/cho", "azami/choto", "azami/kuso", "azami/maku", "azami/mn", "azami/nan", "azami/ren", "azami/shap", "azami/shif"];
 
             /* kumon */
 
@@ -361,12 +361,12 @@ window.onload = function() {
 
             /* guy */
 
-            var guytime = ["☆", "☆", "☆", "☆"];
+            var guytime = ["テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし"];
 
-            var guyother = ["☆", "☆", "☆", "☆", "☆", "☆", "☆", "☆", "☆"];
+            var guyother = ["テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし", "テキストデータなし"];
 
             var guytimesound = ["guy/morning", "guy/noon", "guy/eve", "guy/night"];
-            var guyothersound = ["guy/0", "guy/1", "guy/2", "guy/3", "guy/0", "guy/1", "guy/2", "guy/3", "guy/0"];
+            var guyothersound = ["guy/gen", "guy/mai", "guy/muya", "guy/nani", "guy/shi", "guy/tsuma", "guy/yoku", "guy/yuda", "guy/za"];
 
 /* main msg and sound arrays, morning = 0, day = 1, eve = 2, night = 3 */
 
@@ -562,13 +562,13 @@ window.onload = function() {
               else if ( xday == 9 &&  xmonth == 3 ) {
                 eventsound("sakuyabday");
               }
-              else if ( xday == 90 &&  xmonth == 90 ) {
+              else if ( xday == 25 &&  xmonth == 10 ) {
                 eventsound("azamibday");
               }
               else if ( xday == 20 &&  xmonth == 7 ) {
                 eventsound("kumonbday");
               }
-              else if ( xday == 92 &&  xmonth == 92 ) {
+              else if ( xday == 13 &&  xmonth == 1 ) {
                 eventsound("guybday");
               }
               else if ( xday == 15 &&  xmonth == 4 ) {

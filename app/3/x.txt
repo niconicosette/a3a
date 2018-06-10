@@ -1,12 +1,36 @@
 ------ TO DO -------
 
 - main story feature
+- replace azami and guy's daily テキストデータなし texts with actual texts
+- replace all year 2 event テキストデータなし text with actual texts
 
 ------ NOTES -------
 
 (mp3s saved at 64)
 (tinypng for compression)
 (left out sounds: sakoda bday, matsukawa bday, anniversary event sounds)
+
+when new charas come:
+- correct the filenames in their sound arrays, and the messages in them
+- var guytime = ["...", "...", "...", "..."]; etc
+- compress and rename their soundfiles and add them to folders
+
+- add their event sounds to dom sound spans
+- <span class="nosho" id="omisakuyabday2" sound="sound/zsakuyabday2/omi.mp3" msg="..."></span> etc
+- compress and rename event soundfiles and add them to folders
+
+- fix their birthday dates in ifevent function
+     else if ( xday == 92 &&  xmonth == 92 ) {
+        eventsound("guybday");
+      } etc...
+
+- do their slide out profiles (in dom)
+- <div class="profilecardcontainer" id="guyprofile"> etc
+
+- sort their images and add them to both rarity sort and chara sort (add (2) to title and act="2" and page ="theirname")
+- <img class="thumb" src="img/tsumugi/r-angel2.png" cardname="天使を憐れむ歌。(1)" page="tsumugi" act="1">
+
+- uncomment/add their toggle buttons in index.html
 
 soundfileguide:
 31 = newyear
@@ -20,25 +44,19 @@ soundfileguide:
 39 = christmas
 rest are bdays & anniversary
 
-when new charas come:
-- correct the filenames in their sound arrays, and the messages in them
-- var guytime = ["...", "...", "...", "..."]; etc
 
-- do their slide out profiles (in dom)
-- <div class="profilecardcontainer" id="guyprofile"> etc
 
-- sort their images and add them to both rarity sort and chara sort (add (2) to title and act="2" and page ="theirname")
-- <img class="thumb" src="img/tsumugi/r-angel2.png" cardname="天使を憐れむ歌。(1)" page="tsumugi" act="1">
 
-- add their event sounds to dom sound spans
-- <span class="nosho" id="omisakuyabday2" sound="sound/zsakuyabday2/omi.mp3" msg="..."></span> etc
 
-- fix their birthday dates in ifevent function
-     else if ( xday == 92 &&  xmonth == 92 ) {
-        eventsound("guybday");
-      } etc...
 
-- uncomment their toggle buttons in index.html
+
+
+
+
+
+
+
+
 
 ------ WHEN A3 GOES OFFLINE ------
  
