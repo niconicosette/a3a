@@ -3,6 +3,7 @@
 - main story feature
 - replace azami and guy's daily テキストデータなし texts with actual texts
 - replace all year 2 event テキストデータなし text with actual texts
+- get guy's bloomed r-rehearsal card
 
 ------ NOTES -------
 
