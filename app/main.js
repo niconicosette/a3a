@@ -1,3 +1,4 @@
+
 /* protect */
 
 document.oncontextmenu = function () {
