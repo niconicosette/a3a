@@ -1,4 +1,4 @@
-A3A → https://niconicosette.github.io/a3a
+A3A → https://git.io/a3emu
 
 これはただの二次創作です。キャラの絵も声も「Liber Entertainment Inc」の知的財産です。著作権者はこのプロジェクトを消されたいなら、直接に「niconicosette」を連絡してください。揉めずに消されます → niconicosette@gmail.com
 
